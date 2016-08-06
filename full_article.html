@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Jenkins | Index</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href=" assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default fullArticle-nav mg-b40" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand nav-link" href="#">Mastering Jenkins</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+         <li><a class="nav-link" href="index.html">HOME</a></li>
+					<li><a class="nav-link" href="about.html">ABOUT</a></li>
+					<li><a class="nav-link" href="full_article.html">BLOG</a></li>
+					<li><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="col-md-12 content-section">
+      <div class="col-md-7 content-left">
+        <img class="img-responsive content-img" src="assets/images/content-image.jpg">
+        <div class="content-container">
+          <h3 class="content-heading"><a href="">THE VALUE OF AN ARTIFACT REPOSITORY</a></h3>
+          <div class="content-data">
+            <span class="content-data-dark">BY</span><span class="content-data-orange"><a href=""> JONATHAN MCALLISTER</a></span>
+            <span class="content-data-dark"> | 23 NOVEMBER | 3 COMMENTS |</span><span class="content-data-orange"><a href=""> PHOTOGRAPHY, WEB DESIGN</a></span>
+          </div>
+          <hr>
+          <div class="content-p" style="width: 100%;">
+            <p class="mg-b15">Overview</p>
+            <p class="mg-b15">Artifact management solutions such as Artifactory, Origin, or Nexus have circled the DevOps universe for some time now. 
+              These solutions provide a number of valuable features including a centralized source for binary dependencies, a unified 
+              storage solution for intellectual property, a home for software tool assets and an easy way for non-engineering resources 
+              to procure a given release. To help clarify the solution an artifact repository is to binaries as source control is to source 
+              code. 
+            </p>
+            <p class="mg-b15">This entry will attempt to codify known benefits of this type of solution, and encourage the adoption of this type of tool 
+              for those who are reluctant to implement.
+            </p>
+            <p class="mg-b15">Straw-man Arguments against Binary Asset Management Solutions</p>
+            <p class="mg-b15">First lets address the straw man arguments surrounding the implementation of this type of solution. The more common 
+              argument from a development perspective is usually through the argument of
+            </p>
+            <p class="mg-b15">“I want everything available to me via a single checkout, and tracking binary files in source control works just fine for me”.</p>
+            <p class="mg-b15">The practical implications of this perspective will lead to the following negative value returns:</p>
+            <p class="mg-b15">Binaries are not managed & can expand into disk space realms that grow exponentially.
+              Source control does a lousy job of differencing binary files and this leads to slower more painful checkouts
+              Branches have no concept of binary assets and do not track the latest “blessed” binary as a dependencies. This leads to 
+              regressions and faulty releases.Binary tarballs or zip files are black box entities in source control (there is no understanding 
+              of where they came from, or where they are going). Binary files provide a unique way to hide defects.
+              The second most common straw man argument is one of mythical lost internet connectivity and goes something like the 
+              following:
+            </p>
+            <p class="mg-b15">“But i want to build while not connected to the network”</p>
+            <p class="mg-b15">Last time I checked there were wifi hotspots numbering in the millions. For the rare occasion that we do actually loose 
+              the ability to connect to the network, our ability to perform simple google (good research practice) also goes away.  This in 
+              terms of active development means that one develops efficiently in a vacuum sandbox. Is that really a good development 
+              practice?
+            </p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-default content-button mg-b10">COMMENT</button>
+        <p class="content-loggin mg-b40">You must be <a href="#" class="content-log-anchor">logged</a> in to post a comment.</p>
+      </div>
+      </div>
+      <div class="col-md-3 col-md-offset-1 content-right">
+        <div class="search-container">
+          <input type="text" class="form-control content-search" placeholder="Search">
+          <i class="fa fa-search content-searchi"></i>
+        </div>
+        <div class="categories-container mg-b50">
+          <h4 class="categories-head"><a href="">CATEGORIES</a></h4>
+          <hr>
+          <ul class="content-list mg-t25">
+            <li class="mg-b10"><a href=""><span class="cat-direction mg-r10">>></span>JENKINS</a></li>
+          <li class="mg-b10"><a href=""><span class="cat-direction mg-r10">>></span>ENGINEERING</a></li>
+          <li class="mg-b10"><a href=""><span class="cat-direction mg-r10">>></span>OTHER</a></li>
+          </ul>
+        </div>
+        <div class="popular-container mg-b50">
+        <h4 class="popular-head"><a href="">POPULAR POSTS</a></h4>
+        <hr>
+        <div class="post-container mg-b10">
+          <div class="post-img">
+            <img class="img-responsive" src="assets/images/popular-post.jpg">
+          </div>  
+          <h5 class="popular-heading"><a href="">THE VALUE OF ARTIFACT REPOSITORY</a></h5>
+          <span class="post-time">09 AUGUST</span>
+        </div>
+        <div class="post-container mg-b10">
+          <div class="post-img">
+            <img class="img-responsive" src="assets/images/popular-post.jpg">
+          </div>  
+          <h5 class="popular-heading"><a href="">THE VALUE OF ARTIFACT REPOSITORY</a></h5>
+          <span class="post-time">09 AUGUST</span>
+        </div>
+        <div class="post-container mg-b10">
+          <div class="post-img">
+            <img class="img-responsive" src="assets/images/popular-post.jpg">
+          </div>  
+          <h5 class="popular-heading"><a href="">THE VALUE OF ARTIFACT REPOSITORY</a></h5>
+          <span class="post-time">09 AUGUST</span>
+        </div>
+        <div class="post-container mg-b10">
+          <div class="post-img">
+            <img class="img-responsive" src="assets/images/popular-post.jpg">
+          </div>  
+          <h5 class="popular-heading"><a href="">THE VALUE OF ARTIFACT REPOSITORY</a></h5>
+          <span class="post-time">09 AUGUST</span>
+        </div>
+      </div>
+        <div class="tag-container mg-b50">
+          <h4 class="popular-head"><a href="">TAGS</a></h4>
+          <hr>
+          <div class="tagbuttons mg-l10">
+            <a class="btn btn-tag">JENKINS</a>
+            <a class="btn btn-tag">ENGINEERING</a>
+            <a class="btn btn-tag">DEV TEAMS</a>
+            <a class="btn btn-tag">DEPLOYMENT</a>
+            <a class="btn btn-tag">DEVELOPERS</a>
+            <a class="btn btn-tag">SYSTEM ADMIN</a>
+          </div>
+        </div>
+        <div class="publish-container mg-b40">
+          <h4 class="popular-head"><a href="">PUBLISHER</a></h4>
+          <hr>
+          <div class="publish-content">
+            <h5 class="publish-heading">PACKT PUBLISHING LIMITED.</h5>
+            2nd Floor Livery Place,<br>
+            35 Livery Street <br>
+            Colmore Business District <br>
+            Birmingham B3 2PB <br>
+            United Kingdom <br>
+            <a class="btn buy-button">Buy BOOK</a>
+          </div>
+          <div class="publisher-img">
+            <img src="assets/images/publisher.png">
+          </div>
+        </div>
+        <div class="advertisment-container">
+          <h4 class="popular-head"><a href="">ADVERTISEMENT</a></h4>
+          <hr>
+          <div class="advertsie-collection">
+            <div class="mg-b10">
+              <img src="assets/images/advertise-img.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-content"><span><i class="fa fa-copyright"></i></span> ALL RIGHT RESERVED | JONATHAN MCALLISTER</p>
+    </footer>
+   <script src="assets/js/jquery.min-1.11.2.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/application.js"></script>
+  </body>
+</html>
